@@ -7,28 +7,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.35" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Application\Common\Mappings\" />
-    <Folder Include="Application\Common\Models\" />
     <Folder Include="Application\Common\Utilities\" />
-    <Folder Include="Application\Common\Interfaces\" />
     <Folder Include="Application\Common\Exceptions\" />
-    <Folder Include="Application\Services\" />
-    <Folder Include="Application\Repositories\" />
     <Folder Include="Domain\Enums\" />
     <Folder Include="Domain\Entities\" />
     <Folder Include="Domain\Constats\" />
     <Folder Include="Infrastructure\Data\Configurations\" />
-    <Folder Include="Infrastructure\Interfaces\" />
     <Folder Include="Web\Validations\" />
     <Folder Include="Web\Extensions\" />
     <Folder Include="Web\Middlewares\" />
     <Folder Include="Web\Services\" />
     <Folder Include="Web\Coustomization\" />
-    <Folder Include="Web\Controller\" />
   </ItemGroup>
 
 </Project>

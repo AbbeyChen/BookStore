@@ -1,4 +1,9 @@
 
+using BookStore.Application.Common.Interfaces;
+using BookStore.Application.Repositories;
+using BookStore.Application.Services;
+using BookStore.Infrastructure.Interfaces;
+
 namespace BookStore
 {
     public class Program
@@ -13,6 +18,12 @@ namespace BookStore
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            // Register DI services
+            builder.Services.AddScoped<IBookService, BookService>();
+
+            builder.Services.AddScoped<IBookRepository, BookRepository>();
+            builder.Services.AddScoped<IGenericRepository, GenericRepository>();
 
             var app = builder.Build();
 

@@ -1,6 +1,6 @@
 ﻿namespace BookStore.Application
 {
-    public class ConfigureServices
+    public static class ConfigureServices
     {
     }
 }

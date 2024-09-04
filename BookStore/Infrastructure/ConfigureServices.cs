@@ -1,4 +1,4 @@
-﻿namespace BookStore.Application
+﻿namespace BookStore.Infrastructure
 {
     public class ConfigureServices
     {
